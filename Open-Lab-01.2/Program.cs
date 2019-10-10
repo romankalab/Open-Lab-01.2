@@ -19,9 +19,14 @@ namespace Open_Lab_01._1
 
             number2 = Convert.ToInt32(Console.ReadLine());
 
-            int sum = number + number2;
+            int result1 = SumNumbers(number, number2);
 
-            Console.WriteLine($"This is the result: {sum}");
+            Console.WriteLine($"This is the result: {result1}");
+        }
+        private static int SumNumbers(int number, int number2)
+        {
+            int result = number + number2;
+            return result;
         }
     }
 }
